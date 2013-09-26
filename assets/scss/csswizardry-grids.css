@@ -1,0 +1,1543 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    $CSSWIZARDRY-GRIDS
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * VARIABLES............Your settings.
+ * GRID SETUP...........Build the grid structure.
+ * WIDTHS...............Build our responsive widths around our breakpoints.
+ */
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’s silent classes, or regular CSS classes?
+ */
+/**
+ * At which point should lap and desk breakpoints kick in?
+ */
+/**
+ * Do not edit the following variables.
+ */
+/*------------------------------------*\
+    $GRID SETUP
+\*------------------------------------*/
+/**
+ * 1. Allow the grid system to be used on lists.
+ * 2. Remove any margins and paddings that might affect the grid system.
+ * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ * 4. Remove whitespace caused by `inline-block` elements.
+ */
+.grid {
+  list-style: none;
+  /* [1] */
+  margin: 0;
+  /* [2] */
+  padding: 0;
+  /* [2] */
+  margin-left: -24px;
+  /* [3] */
+  letter-spacing: -0.31em;
+  /* [4] */
+  word-spacing: -0.43em;
+  /* [4] */ }
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Reinstate removed whitespace.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.grid__item {
+  display: inline-block;
+  /* [1] */
+  padding-left: 24px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  letter-spacing: normal;
+  /* [4] */
+  word-spacing: normal;
+  /* [4] */
+  -webkit-box-sizing: border-box;
+  /* [5] */
+  -moz-box-sizing: border-box;
+  /* [5] */
+  box-sizing: border-box;
+  /* [5] */ }
+
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * These next bits get worked out for you.
+ */
+/**
+ * Create our widths, prefixed by the specified namespace.
+ */
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Whole
+ */
+.one-whole {
+  width: 100%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Halves
+ */
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
+  width: 50%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Thirds
+ */
+.one-third, .two-sixths, .four-twelfths {
+  width: 33.333%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 66.666%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Quarters
+ */
+.one-quarter, .two-eighths, .three-twelfths {
+  width: 25%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.three-quarters, .six-eighths, .nine-twelfths {
+  width: 75%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Fifths
+ */
+.one-fifth, .two-tenths {
+  width: 20%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.two-fifths, .four-tenths {
+  width: 40%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.three-fifths, .six-tenths {
+  width: 60%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.four-fifths, .eight-tenths {
+  width: 80%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Sixths
+ */
+.one-sixth, .two-twelfths {
+  width: 16.666%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.five-sixths, .ten-twelfths {
+  width: 83.333%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Eighths
+ */
+.one-eighth {
+  width: 12.5%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.three-eighths {
+  width: 37.5%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.five-eighths {
+  width: 62.5%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.seven-eighths {
+  width: 87.5%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Tenths
+ */
+.one-tenth {
+  width: 10%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.three-tenths {
+  width: 30%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.seven-tenths {
+  width: 70%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.nine-tenths {
+  width: 90%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Twelfths
+ */
+.one-twelfth {
+  width: 8.333%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.five-twelfths {
+  width: 41.666%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.seven-twelfths {
+  width: 58.333%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.eleven-twelfths {
+  width: 91.666%;
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Our breakpoint specific widths classes.
+ */
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+  .palm-one-whole {
+    width: 100%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Halves
+   */
+  .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
+    width: 50%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Thirds
+   */
+  .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
+    width: 33.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
+    width: 66.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Quarters
+   */
+  .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
+    width: 25%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
+    width: 75%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Fifths
+   */
+  .palm-one-fifth, .palm-two-tenths {
+    width: 20%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-two-fifths, .palm-four-tenths {
+    width: 40%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-three-fifths, .palm-six-tenths {
+    width: 60%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-four-fifths, .palm-eight-tenths {
+    width: 80%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Sixths
+   */
+  .palm-one-sixth, .palm-two-twelfths {
+    width: 16.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-five-sixths, .palm-ten-twelfths {
+    width: 83.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Eighths
+   */
+  .palm-one-eighth {
+    width: 12.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-three-eighths {
+    width: 37.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-five-eighths {
+    width: 62.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-seven-eighths {
+    width: 87.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Tenths
+   */
+  .palm-one-tenth {
+    width: 10%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-three-tenths {
+    width: 30%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-seven-tenths {
+    width: 70%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-nine-tenths {
+    width: 90%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Twelfths
+   */
+  .palm-one-twelfth {
+    width: 8.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-five-twelfths {
+    width: 41.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-seven-twelfths {
+    width: 58.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .palm-eleven-twelfths {
+    width: 91.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  /**
+   * Whole
+   */
+  .lap-one-whole {
+    width: 100%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Halves
+   */
+  .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
+    width: 50%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Thirds
+   */
+  .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
+    width: 33.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
+    width: 66.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Quarters
+   */
+  .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
+    width: 25%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
+    width: 75%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Fifths
+   */
+  .lap-one-fifth, .lap-two-tenths {
+    width: 20%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-two-fifths, .lap-four-tenths {
+    width: 40%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-three-fifths, .lap-six-tenths {
+    width: 60%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-four-fifths, .lap-eight-tenths {
+    width: 80%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Sixths
+   */
+  .lap-one-sixth, .lap-two-twelfths {
+    width: 16.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-five-sixths, .lap-ten-twelfths {
+    width: 83.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Eighths
+   */
+  .lap-one-eighth {
+    width: 12.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-three-eighths {
+    width: 37.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-five-eighths {
+    width: 62.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-seven-eighths {
+    width: 87.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Tenths
+   */
+  .lap-one-tenth {
+    width: 10%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-three-tenths {
+    width: 30%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-seven-tenths {
+    width: 70%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-nine-tenths {
+    width: 90%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Twelfths
+   */
+  .lap-one-twelfth {
+    width: 8.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-five-twelfths {
+    width: 41.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-seven-twelfths {
+    width: 58.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .lap-eleven-twelfths {
+    width: 91.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+@media only screen and (max-width: 767px) {
+  /**
+   * Whole
+   */
+  .portable-one-whole {
+    width: 100%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Halves
+   */
+  .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
+    width: 50%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Thirds
+   */
+  .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
+    width: 33.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
+    width: 66.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Quarters
+   */
+  .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
+    width: 25%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
+    width: 75%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Fifths
+   */
+  .portable-one-fifth, .portable-two-tenths {
+    width: 20%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-two-fifths, .portable-four-tenths {
+    width: 40%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-three-fifths, .portable-six-tenths {
+    width: 60%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-four-fifths, .portable-eight-tenths {
+    width: 80%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Sixths
+   */
+  .portable-one-sixth, .portable-two-twelfths {
+    width: 16.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-five-sixths, .portable-ten-twelfths {
+    width: 83.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Eighths
+   */
+  .portable-one-eighth {
+    width: 12.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-three-eighths {
+    width: 37.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-five-eighths {
+    width: 62.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-seven-eighths {
+    width: 87.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Tenths
+   */
+  .portable-one-tenth {
+    width: 10%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-three-tenths {
+    width: 30%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-seven-tenths {
+    width: 70%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-nine-tenths {
+    width: 90%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Twelfths
+   */
+  .portable-one-twelfth {
+    width: 8.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-five-twelfths {
+    width: 41.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-seven-twelfths {
+    width: 58.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .portable-eleven-twelfths {
+    width: 91.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+@media only screen and (min-width: 960px) {
+  /**
+   * Whole
+   */
+  .desk-one-whole {
+    width: 100%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Halves
+   */
+  .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
+    width: 50%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Thirds
+   */
+  .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
+    width: 33.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
+    width: 66.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Quarters
+   */
+  .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
+    width: 25%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
+    width: 75%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Fifths
+   */
+  .desk-one-fifth, .desk-two-tenths {
+    width: 20%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-two-fifths, .desk-four-tenths {
+    width: 40%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-three-fifths, .desk-six-tenths {
+    width: 60%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-four-fifths, .desk-eight-tenths {
+    width: 80%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Sixths
+   */
+  .desk-one-sixth, .desk-two-twelfths {
+    width: 16.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-five-sixths, .desk-ten-twelfths {
+    width: 83.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Eighths
+   */
+  .desk-one-eighth {
+    width: 12.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-three-eighths {
+    width: 37.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-five-eighths {
+    width: 62.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-seven-eighths {
+    width: 87.5%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Tenths
+   */
+  .desk-one-tenth {
+    width: 10%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-three-tenths {
+    width: 30%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-seven-tenths {
+    width: 70%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-nine-tenths {
+    width: 90%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /**
+   * Twelfths
+   */
+  .desk-one-twelfth {
+    width: 8.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-five-twelfths {
+    width: 41.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-seven-twelfths {
+    width: 58.333%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .desk-eleven-twelfths {
+    width: 91.666%;
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }

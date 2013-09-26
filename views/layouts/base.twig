@@ -1,0 +1,27 @@
+{% include "components/html-head.twig" %}
+
+<body class="index-dark">
+<!--[if lt IE 8]>
+    <p class="browsehappy">You are using a very <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+  {% block top_nav %}
+    {% include "components/top_nav.twig" %}
+  {% endblock %}
+  {% spaceless %}
+  <div class="grid">
+    {% include "components/gallery.twig" %}
+    
+    <main class="mainContent">
+      {% block content %}
+      {% endblock %}
+    </main>
+
+  </div>
+  {% endspaceless %}
+
+  {% block footer %}
+    {% include "component/main_footer.twig" %}
+  {% endblock %}
+{% include "components/scripts.twig" %}
+</body>
+</html>

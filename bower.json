@@ -1,0 +1,33 @@
+{
+  "name": "timber-bcsb",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bryanaka/wptimber-bcsb",
+  "authors": [
+    "Bryan M. Robles <bryanaka0@gmail.gov>"
+  ],
+  "description": "A Front-End Developers Wordpress Theme",
+  "main": "index.php",
+  "keywords": [
+    "wordpress",
+    "pbd",
+    "bcsb",
+    "structural",
+    "biology",
+    "theme"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~2.1.2",
+    "jquery": "~1.10",
+    "modernizr": "~2.6.2",
+    "csswizardry-grids": "~2.2.0"
+  }
+}
