@@ -1,0 +1,32 @@
+// Keep this comment here for Wordpress!
+/*!
+Theme Name: wptimber-bcsb
+Theme URI: https://github.com/bryanaka/wptimber-bcsb
+Author: Bryan Robles <bryanaka0@gmail.com>
+Author URI: https://github.com/bryanaka/
+Description: BCSB Theme Sponsored by Physical Biosciences
+Version: 0.1
+License: GPLv2
+License URI: LICENSE
+Text Domain: biosciences
+Domain Path: /languages/
+Tags: pbd, physical, biosciences, modern, front-end, developer, theme, timber, twig
+
+*/
+// Settings and Variables
+@import 'variables';
+@import 'vendor';
+
+// Core Requires
+@import 'core/core';
+
+// Modules
+@import 'modules/headers';
+@import 'modules/nav';
+@import 'modules/gallery';
+@import 'modules/footers';
+
+// Inbox, a place for styles to be placed enroute to being sorted properly
+@import 'inbox';
+// Shame, a place for hacks
+@import 'shame';

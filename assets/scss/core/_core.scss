@@ -1,0 +1,17 @@
+/*  ==============================
+	Core Styles
+	============================== */
+
+// Normalize provided in scss/_vendor.scss
+
+// Mixins, functions, animations
+@import 'helpers/helpers';
+
+// All additional element extremely general styling
+@import 'base/base';
+
+// Bridge between modules and generalized content
+@import 'content/content';
+
+// 
+@import 'layout/layout';

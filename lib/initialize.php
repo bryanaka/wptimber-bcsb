@@ -16,34 +16,22 @@ spl_autoload_register(function ($class) {
 	}
 });
 
-Bootstrap\Grid::initialize();
-Bootstrap\ResponsiveUtilities::initialize();
-
 function biosciences_script_loading() {
 	$styles_path = get_template_directory_uri().'/assets/css';
 	$script_path = get_template_directory_uri().'/assets/js/';
 	$vendor_path = get_template_directory_uri().'/assets/vendor/';
 	$in_footer = true;
 
-	// modernizr
-	wp_register_script( 'modernizr', $script_path.'modernizr.custom.js', array(), false, false );
-
 	// jquery needs to be an older version to support the calendar widget...
 	// which uses an old qtip library, which depends on $.browser method... UGH
 	// wp_deregister_script('jquery');
 	// wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", false, $in_footer);
 
-	wp_register_script('bootstrap', $vendor_path.'sass-bootstrap/dist/js/bootstrap.min.js', array('jquery'), false, $in_footer );
-	
-	// responsive_slides - only home page?
-	wp_register_script('responsive_slides', $script_path.'responsive_slides.min.js', array('jquery'), false, $in_footer );
+	wp_register_script('main', $script_path.'main.js', array('jquery'), false, $in_footer );
+	wp_register_script( 'equalize', $vendor_path.'equalize/js/equalize.min.js', array('jquery'), false, $in_footer);
 
-	wp_register_script('main', $script_path.'main.js', array('jquery', 'responsive_slides'), false, $in_footer );
-
-	wp_enqueue_script('modernizr');
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('bootstrap');
-	wp_enqueue_script('responsive_slides');
+	wp_enqueue_script('equalize');
 	wp_enqueue_script('main');
 }
 

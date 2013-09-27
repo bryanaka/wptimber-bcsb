@@ -8,11 +8,12 @@
     {% include "components/top_nav.twig" %}
   {% endblock %}
   {% spaceless %}
+  {% include "components/gallery.twig" %}
   <div class="grid">
-    {% include "components/gallery.twig" %}
     
     <main class="mainContent">
       {% block content %}
+
       {% endblock %}
     </main>
 
@@ -20,8 +21,10 @@
   {% endspaceless %}
 
   {% block footer %}
-    {% include "component/main_footer.twig" %}
+    {% include "components/main_footer.twig" %}
   {% endblock %}
+  {{wp_footer}}
 {% include "components/scripts.twig" %}
+
 </body>
 </html>

@@ -1,4 +1,32 @@
 {% extends "layouts/base.twig" %}
 {% block content %}
-
+	{% spaceless %}
+	<section class="moreInfo">
+        <article class="clip grid__item one-third portable-one-whole">
+            <h2>What We Do</h2>
+            <hr>
+            <p>
+                The vision of the Berkeley Center for Structural Biology (BCSB) is to provide state-of-the-art beamlines and outstanding service for crystallographers around the world, enabling structure solution on even the most complex biological systems.
+            </p>
+            <h2>This Can Function as a Sidebar</h2>
+            <hr>
+            <p>
+                This part of the page can also function as a sidebar, so you choose to make it. This is now just a bunch of dummy text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+        </article>
+        <article class="clip grid__item two-thirds portable-one-whole">
+            <h2>The Beamlines</h2>
+            <hr>
+            <img src="http://bcsb-web-2.als.lbl.gov/wiki/images/2/21/Loop.png" class="img-left" width="150">
+            <p>
+                For over ten years, the BCSB has operated five protein crystallography beamlines at the Advanced Light Source (ALS) at Lawrence Berkeley National Laboratory. Through many improvements over the years, the Center has dramatically increased the flux, stability, and automation of the beamlines, keeping them at the cutting edge of synchrotron MX science.
+            </p>
+            <img src="http://bcsb-web-2.als.lbl.gov/wiki/images/4/4b/Minikappa.png" class="img-right" width="100">
+            <p>
+                Two of the BCSB beamlines now have liquid nitrogen cooled monochromators, and one of the monochromators now includes a multilayer, giving a ten times flux boost for native experiments. User-controlled variable collimators (from 100 um to 10 micron spot size) are installed on four of the five beamlines, along with advanced software capabilities such as raster and vector scanning. All the beamliens are remote-enabled, significantly reducing the cost of running at the synchrotron: users need only send their crystals in pucks, and they can control the sample loading and data collection from their home labs. 
+            </p>
+        </article>
+    </section>
+    {% endspaceless %}
 {% endblock %}
