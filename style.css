@@ -1940,7 +1940,7 @@ h5, h6 {
 .gallery__overlay {
   background: #252525;
   opacity: 0;
-  padding-left: 24px;
+  padding-left: 0;
   position: absolute;
   color: #FFF;
   top: 0;

@@ -2,35 +2,35 @@
 <footer class="mainFooter">
     <div class="row center">
         <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
-            <h3>Important Info</h3>
+        {% if menus.footer_left %}
+            <h3>{{menus.footer_left.name}}</h3>
             <hr>
-            <a href="" class="mainFooter__link">Edit this page</a><br>
-            <a href="" class="mainFooter__link">Discuss this page</a><br>
-            <a href="" class="mainFooter__link">Page history</a><br>
-            <a href="" class="mainFooter__link">What links here</a><br>
-            <a href="" class="mainFooter__link">Related changes</a><br> 
+            {% for item in menus.footer_left.get_items %}
+                <a href="{{item.get_path}}" class="mainFooter__link">{{item.title}}</a><br>
+            {% endfor %}
+        {% endif %}
         </article>
         <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
-            <h3>The Beamlines</h3>
+        {% if menus.footer_center %}
+            <h3>{{menus.footer_center.name}}</h3>
             <hr>
-            <a href="" class="mainFooter__link">Edit this page</a><br>
-            <a href="" class="mainFooter__link">Discuss this page</a><br>
-            <a href="" class="mainFooter__link">Page history</a><br>
-            <a href="" class="mainFooter__link">What links here</a><br>
-            <a href="" class="mainFooter__link">Related changes</a><br> 
+            {% for item in menus.footer_center.get_items %}
+                <a href="{{item.get_path}}" class="mainFooter__link">{{item.title}}</a><br>
+            {% endfor %}
+        {% endif %} 
         </article>
         <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
-            <h3>Contacts</h3>
+        {% if menus.footer_right %}
+            <h3>{{menus.footer_right.name}}</h3>
             <hr>
-            <a href="" class="mainFooter__link">Edit this page</a><br>
-            <a href="" class="mainFooter__link">Discuss this page</a><br>
-            <a href="" class="mainFooter__link">Page history</a><br>
-            <a href="" class="mainFooter__link">What links here</a><br>
-            <a href="" class="mainFooter__link">Related changes</a><br> 
+            {% for item in menus.footer_right.get_items %}
+                <a href="{{item.get_path}}" class="mainFooter__link">{{item.title}}</a><br>
+            {% endfor %}
+        {% endif %}
         </article>
         <article class="one-quarter grid__item lap-one-half palm-one-whole mid">
-            <img src="/assets/img/full_doe_logo_white.png" width="150" style="margin-top:2.25em; margin-bottom:2.25em;"><br>
-            <img src="/assets/img/uc_seal_white.png" width="75">
+            <img src="{{template_uri}}/assets/img/full_doe_logo_white.png" width="150" style="margin-top:2.25em; margin-bottom:2.25em;"><br>
+            <img src="{{template_uri}}/assets/img/uc_seal_white.png" width="75">
         </article>
     </div>
 </footer>
