@@ -18,7 +18,7 @@
 			}
 		});
 
-		$('body').on('click', function(e) {
+		$('body').on('click', function() {
 			// close the nav menu when clicking elsewhere
 		});
 	});

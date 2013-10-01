@@ -4,25 +4,22 @@
 {% endblock %}
 {% block content %}
 	{% spaceless %}
-	<section class="moreInfo">
-<!--         <article class="clip grid__item one-third portable--one-whole">
-            <h2>What We Do</h2>
-            <hr>
-            <p>
-                The vision of the Berkeley Center for Structural Biology (BCSB) is to provide state-of-the-art beamlines and outstanding service for crystallographers around the world, enabling structure solution on even the most complex biological systems.
-            </p>
-            <h2>This Can Function as a Sidebar</h2>
-            <hr>
-            <p>
-                This part of the page can also function as a sidebar, so you choose to make it. This is now just a bunch of dummy text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </article> -->
-        <article class="clip grid__item two-thirds portable--one-whole">
-            <h2>The Berkeley Center for Structural Biology</h2>
-            <hr>
+        <aside class="sidebar grid__item one-quarter portable--one-whole">
+            {{main_sidebar}}
+        </aside>
+        <section class="grid__item three-quarters portable--one-whole">
+            <article class="intro">
+                <h2>The Berkeley Center for Structural Biology</h2>
+                <hr>
                 {{page.content}}
-        </article>
-    </section>
+            </article>
+            <article class="news-preview">
+                <h2>Recent Scientific Highlights</h2>
+                <hr>
+                {% for post in posts %}
+                    {% include [post.post_type~'/preview.twig', 'posts/preview.twig'] %}
+                {% endfor %}
+            </article>
+        </section>
     {% endspaceless %}
 {% endblock %}

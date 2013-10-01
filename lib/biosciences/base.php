@@ -6,7 +6,7 @@ use TimberPost as TimberPost;
 
 Class Base extends Timber {
 
-	public $context = array();
+	public $context;
 	public $sidebars = array();
 
 	public function __construct() {

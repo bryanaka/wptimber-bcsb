@@ -1683,6 +1683,69 @@ body {
   background: #333333;
 }
 
+/* line 1, ../scss/core/base/_wpbase.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* line 5, ../scss/core/base/_wpbase.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 9, ../scss/core/base/_wpbase.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 14, ../scss/core/base/_wpbase.scss */
+.alignright {
+  float: right;
+}
+
+/* line 17, ../scss/core/base/_wpbase.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 20, ../scss/core/base/_wpbase.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 769px) {
+  /* line 27, ../scss/core/base/_wpbase.scss */
+  img.alignright {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 32, ../scss/core/base/_wpbase.scss */
+  img.alignleft {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 37, ../scss/core/base/_wpbase.scss */
+  .alignright {
+    float: none;
+    display: block;
+  }
+
+  /* line 41, ../scss/core/base/_wpbase.scss */
+  .alignleft {
+    float: none;
+    display: block;
+  }
+}
 /* line 1, ../scss/core/content/_utils.scss */
 .roboto {
   font-family: 'Roboto Condensed', sans-serif;
@@ -1718,14 +1781,7 @@ h5, h6 {
 /* line 3, ../scss/core/layout/_layout.scss */
 .mainContent {
   background: #333333;
-  color: #FFFFFF;
-  margin: 0 auto;
-}
-
-/* line 10, ../scss/core/layout/_layout.scss */
-.moreInfo {
-  padding: 1.5rem 0;
-  max-width: 1200px;
+  color: #EDEDED;
   margin: 0 auto;
 }
 
@@ -1772,7 +1828,7 @@ h5, h6 {
 }
 
 /* line 36, ../scss/modules/_nav.scss */
-.mainNavContainer, .mainContent, .gallery__tiles {
+.mainNavContainer, .mainContent {
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -1919,42 +1975,41 @@ h5, h6 {
 
 /* line 1, ../scss/modules/_gallery.scss */
 .gallery {
-  background: #252525;
+  background: #222222;
   max-height: 13em;
-  margin: 0 auto;
-  border-top: #292929 5px solid;
-  border-bottom: #292929 5px solid;
+  border-top: #292929 4px solid;
+  border-bottom: #292929 4px solid;
+  width: 100%;
 }
 
-/* line 9, ../scss/modules/_gallery.scss */
-.gallery__tiles {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* line 13, ../scss/modules/_gallery.scss */
+/* line 8, ../scss/modules/_gallery.scss */
 .gallery__item {
-  max-height: 13em;
+  max-width: 13rem;
+  max-height: 13rem;
   position: relative;
 }
 
-/* line 17, ../scss/modules/_gallery.scss */
+/* line 13, ../scss/modules/_gallery.scss */
 .gallery__item img {
   overflow: hidden;
   padding-left: 0;
+  max-height: 13rem;
 }
 
-/* line 22, ../scss/modules/_gallery.scss */
+/* line 19, ../scss/modules/_gallery.scss */
 .gallery__item:hover > .gallery__overlay {
   opacity: 0.9;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-/* line 31, ../scss/modules/_gallery.scss */
+/* line 25, ../scss/modules/_gallery.scss */
 .gallery__overlay {
   background: #252525;
   opacity: 0;
@@ -1965,11 +2020,30 @@ h5, h6 {
   left: 0;
   height: 100%;
   text-align: center;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 1, ../scss/modules/_sidebar.scss */
+.sidebar {
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(0, 0, 0, 0.15) 0 1px 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  background-color: #222;
+}
+
+/* line 9, ../scss/modules/_sidebar.scss */
+.widget {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* *****************************************************

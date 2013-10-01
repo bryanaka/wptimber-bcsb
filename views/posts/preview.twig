@@ -1,0 +1,15 @@
+<article class="preview preview--{{post.post_type}}" id="preview-{{post.ID}}">
+	<div class="preview-container preview-container--{{post.post_type}}">
+		<hgroup>
+			<h3 class="preview__title"><a href="{{post.get_path}}">{{post.title}}</a></h3>
+			<h4 class="preview__date">{{post.post_date|date('l, F jS Y')}}</h4>
+		</hgroup>
+		<div class="preview__content">
+			{% if post.get_thumbnail %}
+				<img src="{{ post.get_thumbnail.get_src|resize(160) }}" class="preview__thumbnail" >
+			{% endif %}
+			{# this is a broken implementation #}
+			{{ post.get_preview(100, false, 'Read More >>', true) }}
+		</div>
+	</div>
+</article>
