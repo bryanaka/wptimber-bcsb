@@ -11,17 +11,23 @@
     </div>
     <ul class="mainNav">
       {% for item in menus.primary.get_items %}
-        <li class="mainNav__linkGroup">
-          <a href="{{item.url}}" class="mainNav__link">{{item.title}} <i class="icon-double-angle-down"></i></a>
         {% if item.get_children %}
+          <li class="mainNav__linkGroup">
+            <a href="{{item.url}}" class="mainNav__link--dropdown">
+              {{item.title}} <i class="icon-double-angle-down"></i>
+            </a>
             <ul class="subNav">
               {% for child in item.get_children %}
                 <li class="subNav__link"><a href="{{child.url}}">{{child.title}}</a></li>
               {% endfor %}
             </ul>
-        </li>
+          </li>
         {% else %}
-        </li>
+          <li class="mainNav__linkGroup">
+            <a href="{{item.url}}" class="mainNav__link">
+              {{item.title}}
+            </a>
+          </li>
         {% endif %}
       {% endfor %}
     </ul>

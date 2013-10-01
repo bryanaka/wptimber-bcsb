@@ -1801,22 +1801,22 @@ h5, h6 {
   transition-duration: 0.5s;
 }
 /* line 56, ../scss/modules/_nav.scss */
-.mainNav__linkGroup:hover {
+.mainNav__linkGroup.selected {
   background-color: #38679A;
   color: #FAFAFA;
 }
 /* line 60, ../scss/modules/_nav.scss */
-.mainNav__linkGroup:hover .mainNav__link {
+.mainNav__linkGroup.selected .mainNav__link, .mainNav__linkGroup.selected .mainNav__link--dropdown {
   color: #FAFAFA;
 }
 /* line 64, ../scss/modules/_nav.scss */
-.mainNav__linkGroup:hover .subNav {
+.mainNav__linkGroup.selected .subNav {
   display: block;
   opacity: 1;
 }
 
 /* line 70, ../scss/modules/_nav.scss */
-.mainNav__link {
+.mainNav__link, .mainNav__link--dropdown {
   text-align: center;
   color: #08C;
   text-decoration: none;
@@ -1834,7 +1834,7 @@ h5, h6 {
 }
 
 /* SUBNAVIGATION */
-/* line 83, ../scss/modules/_nav.scss */
+/* line 87, ../scss/modules/_nav.scss */
 .subNav {
   position: absolute;
   opacity: 0;
@@ -1843,7 +1843,6 @@ h5, h6 {
   z-index: 5;
   border: #38679A 5px solid;
   background: #FAFAFA;
-  display: none;
   padding: 0;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -1854,7 +1853,7 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 96, ../scss/modules/_nav.scss */
+/* line 99, ../scss/modules/_nav.scss */
 .subNav::before {
   position: absolute;
   width: 0;
@@ -1868,7 +1867,7 @@ h5, h6 {
   z-index: 10;
 }
 
-/* line 111, ../scss/modules/_nav.scss */
+/* line 114, ../scss/modules/_nav.scss */
 .subNav__link {
   display: block;
   position: relative;
@@ -1878,11 +1877,11 @@ h5, h6 {
   text-align: center;
   z-index: 5;
 }
-/* line 120, ../scss/modules/_nav.scss */
+/* line 123, ../scss/modules/_nav.scss */
 .subNav__link:first-child {
   margin-top: 1rem;
 }
-/* line 124, ../scss/modules/_nav.scss */
+/* line 127, ../scss/modules/_nav.scss */
 .subNav__link:hover {
   background-color: #38679A;
   -webkit-transition-property: background-color;
@@ -1894,11 +1893,11 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 129, ../scss/modules/_nav.scss */
+/* line 132, ../scss/modules/_nav.scss */
 .subNav__link:hover a {
   color: #FAFAFA;
 }
-/* line 134, ../scss/modules/_nav.scss */
+/* line 137, ../scss/modules/_nav.scss */
 .subNav__link a {
   color: #38679A;
   text-decoration: none;
@@ -1913,7 +1912,7 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 142, ../scss/modules/_nav.scss */
+/* line 145, ../scss/modules/_nav.scss */
 .subNav__link a:hover {
   color: #FAFAFA;
 }

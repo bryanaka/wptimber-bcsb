@@ -53,7 +53,7 @@
     @include transition-property(background-color);
     @include transition-duration(0.5s);
 
-    &:hover {
+    &.selected {
         background-color: #38679A;
         color: #FAFAFA;
 
@@ -78,6 +78,10 @@
     @include transition-duration(0.5s);
 }
 
+.mainNav__link--dropdown {
+    @extend .mainNav__link;
+}
+
 /* SUBNAVIGATION */
 
 .subNav {
@@ -88,7 +92,6 @@
     z-index:5;
     border:#38679A 5px solid;
     background:#FAFAFA;
-    display: none;
     padding: 0;
     @include transition-property(opacity);
     @include transition-duration(0.5s);
