@@ -1,16 +1,19 @@
+.news-previews {
+
+}
+
 .previewContainer{
 
 }
 
 .preview {
-
+	margin-bottom: 3rem;
 }
 
 .preview__title {
 	margin-top: 0px;
 
 	a {
-		color: #252525;
 		@include transition-property(color);
 		@include transition-duration(500ms); 
 

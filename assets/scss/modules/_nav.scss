@@ -33,7 +33,7 @@
     padding: .5em .5em .5em 0;
     padding: .5rem .5rem .5rem 0;
 }
-.mainNavContainer, .mainContent {
+.mainNavContainer {
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -93,6 +93,7 @@
     border:#38679A 5px solid;
     background:#FAFAFA;
     padding: 0;
+    display: none;
     @include transition-property(opacity);
     @include transition-duration(0.5s);
 

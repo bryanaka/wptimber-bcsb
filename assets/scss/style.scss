@@ -22,11 +22,14 @@ Tags: pbd, physical, biosciences, modern, front-end, developer, theme, timber, t
 @import 'core/core';
 
 // Modules
-@import 'modules/headers';
-@import 'modules/nav';
-@import 'modules/gallery';
-@import 'modules/sidebar';
-@import 'modules/footers';
+@import 'modules/all';
+
+// @import 'modules/headers';
+// @import 'modules/nav';
+// @import 'modules/gallery';
+// @import 'modules/sidebar';
+// @import 'modules/footers';
+// @import 'modules/news/news';
 
 // Inbox, a place for styles to be placed enroute to being sorted properly
 @import 'inbox';

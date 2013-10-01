@@ -99,3 +99,13 @@ textarea {
 body{
     background: #333333;
 }
+
+a {
+    color: #0088CC;
+    @include transition-property(color);
+    @include transition-duration(400ms);
+
+    &:hover {
+        color: lighten(#0088CC, 10%);
+    }
+}

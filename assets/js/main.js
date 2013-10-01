@@ -9,7 +9,7 @@
 				return;
 			}
 			e.preventDefault();
-			
+
 			if(!$this.closest('.mainNav__linkGroup').hasClass('selected')) {
 				$('.mainNav__linkGroup').removeClass('selected');
 				$this.closest('.mainNav__linkGroup').toggleClass('selected');

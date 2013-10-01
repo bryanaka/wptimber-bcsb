@@ -1683,6 +1683,28 @@ body {
   background: #333333;
 }
 
+/* line 103, ../scss/core/base/_defaults.scss */
+a {
+  color: #0088CC;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 108, ../scss/core/base/_defaults.scss */
+a:hover {
+  color: #00aaff;
+}
+
+/* line 113, ../scss/core/base/_defaults.scss */
+.mainContent {
+  margin-bottom: 2rem;
+}
+
 /* line 1, ../scss/core/base/_wpbase.scss */
 img.alignright {
   float: right;
@@ -1783,6 +1805,8 @@ h5, h6 {
   background: #333333;
   color: #EDEDED;
   margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 2rem;
 }
 
 /* *****************************************************
@@ -1828,7 +1852,7 @@ h5, h6 {
 }
 
 /* line 36, ../scss/modules/_nav.scss */
-.mainNavContainer, .mainContent {
+.mainNavContainer {
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -1900,6 +1924,7 @@ h5, h6 {
   border: #38679A 5px solid;
   background: #FAFAFA;
   padding: 0;
+  display: none;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -1909,7 +1934,7 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 99, ../scss/modules/_nav.scss */
+/* line 100, ../scss/modules/_nav.scss */
 .subNav::before {
   position: absolute;
   width: 0;
@@ -1923,7 +1948,7 @@ h5, h6 {
   z-index: 10;
 }
 
-/* line 114, ../scss/modules/_nav.scss */
+/* line 115, ../scss/modules/_nav.scss */
 .subNav__link {
   display: block;
   position: relative;
@@ -1933,11 +1958,11 @@ h5, h6 {
   text-align: center;
   z-index: 5;
 }
-/* line 123, ../scss/modules/_nav.scss */
+/* line 124, ../scss/modules/_nav.scss */
 .subNav__link:first-child {
   margin-top: 1rem;
 }
-/* line 127, ../scss/modules/_nav.scss */
+/* line 128, ../scss/modules/_nav.scss */
 .subNav__link:hover {
   background-color: #38679A;
   -webkit-transition-property: background-color;
@@ -1949,11 +1974,11 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 132, ../scss/modules/_nav.scss */
+/* line 133, ../scss/modules/_nav.scss */
 .subNav__link:hover a {
   color: #FAFAFA;
 }
-/* line 137, ../scss/modules/_nav.scss */
+/* line 138, ../scss/modules/_nav.scss */
 .subNav__link a {
   color: #38679A;
   text-decoration: none;
@@ -1968,7 +1993,7 @@ h5, h6 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 145, ../scss/modules/_nav.scss */
+/* line 146, ../scss/modules/_nav.scss */
 .subNav__link a:hover {
   color: #FAFAFA;
 }
@@ -2062,4 +2087,36 @@ h5, h6 {
 .mainFooter__item {
   vertical-align: top;
   text-align: left;
+}
+
+/* line 9, ../scss/modules/news/_preview.scss */
+.preview {
+  margin-bottom: 3rem;
+}
+
+/* line 13, ../scss/modules/news/_preview.scss */
+.preview__title {
+  margin-top: 0px;
+}
+/* line 16, ../scss/modules/news/_preview.scss */
+.preview__title a {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+/* line 30, ../scss/modules/news/_preview.scss */
+.preview__thumbnail {
+  float: left;
+  padding-right: 16px;
+}
+
+/* line 1, ../scss/_inbox.scss */
+.logo__brand {
+  text-decoration: none;
 }
