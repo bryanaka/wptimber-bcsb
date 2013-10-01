@@ -1,7 +1,7 @@
 {% spaceless %}
 <footer class="mainFooter">
     <div class="row center">
-        <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
+        <article class="one-quarter grid__item lap--one-half palm--one-whole mainFooter__item">
         {% if menus.footer_left %}
             <h3>{{menus.footer_left.name}}</h3>
             <hr>
@@ -10,7 +10,7 @@
             {% endfor %}
         {% endif %}
         </article>
-        <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
+        <article class="one-quarter grid__item lap--one-half palm--one-whole mainFooter__item">
         {% if menus.footer_center %}
             <h3>{{menus.footer_center.name}}</h3>
             <hr>
@@ -19,7 +19,7 @@
             {% endfor %}
         {% endif %} 
         </article>
-        <article class="one-quarter grid__item lap-one-half palm-one-whole mainFooter__item">
+        <article class="one-quarter grid__item lap--one-half palm--one-whole mainFooter__item">
         {% if menus.footer_right %}
             <h3>{{menus.footer_right.name}}</h3>
             <hr>
@@ -28,7 +28,7 @@
             {% endfor %}
         {% endif %}
         </article>
-        <article class="one-quarter grid__item lap-one-half palm-one-whole mid">
+        <article class="one-quarter grid__item lap--one-half palm--one-whole mid">
             <img src="{{template_uri}}/assets/img/full_doe_logo_white.png" width="150" style="margin-top:2.25em; margin-bottom:2.25em;"><br>
             <img src="{{template_uri}}/assets/img/uc_seal_white.png" width="75">
         </article>

@@ -1,0 +1,10 @@
+{% extends "layouts/base.twig" %}
+{% block content %}
+	{% spaceless %}
+    <article class="clip grid__item one-whole">
+        <h2>{{page.title}}</h2>
+        <hr>
+            {{page.content}}
+    </article>
+    {% endspaceless %}
+{% endblock %}

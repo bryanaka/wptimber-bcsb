@@ -1748,7 +1748,6 @@ h5, h6 {
   padding: .5rem 1.5rem;
   border-bottom: #4376A3 5px solid;
 }
-
 /* line 16, ../scss/modules/_nav.scss */
 .topNav a {
   margin: 0 1.5em 0 0;
@@ -1756,7 +1755,7 @@ h5, h6 {
   text-decoration: none;
 }
 
-/* line 22, ../scss/modules/_nav.scss */
+/* line 23, ../scss/modules/_nav.scss */
 .topNav__header {
   margin: 0;
   color: #FAFAFA;
@@ -1764,7 +1763,7 @@ h5, h6 {
   float: left;
 }
 
-/* line 29, ../scss/modules/_nav.scss */
+/* line 30, ../scss/modules/_nav.scss */
 .logo {
   display: inline-block;
   color: #FAFAFA;
@@ -1772,30 +1771,51 @@ h5, h6 {
   padding: .5rem .5rem .5rem 0;
 }
 
-/* line 35, ../scss/modules/_nav.scss */
-.mainNav, .mainContent, .gallery__tiles {
+/* line 36, ../scss/modules/_nav.scss */
+.mainNavContainer, .mainContent, .gallery__tiles {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1.5em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-/* line 43, ../scss/modules/_nav.scss */
-.moreInfo {
-  padding-left: -1.5em;
+/* line 41, ../scss/modules/_nav.scss */
+.mainNav {
+  padding: 0;
 }
 
-/* line 46, ../scss/modules/_nav.scss */
+/* line 45, ../scss/modules/_nav.scss */
 .mainNav__linkGroup {
   display: inline-block;
-  padding: .5em;
-  padding: .5rem;
+  padding: 0.5rem;
+  margin: 0;
+  margin-right: 0.5rem;
   position: relative;
+  list-style: none;
+  border-top: 3px #FAFAFA solid;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 56, ../scss/modules/_nav.scss */
+.mainNav__linkGroup:hover {
+  background-color: #38679A;
+  color: #FAFAFA;
+}
+/* line 60, ../scss/modules/_nav.scss */
+.mainNav__linkGroup:hover .mainNav__link {
+  color: #FAFAFA;
+}
+/* line 64, ../scss/modules/_nav.scss */
+.mainNav__linkGroup:hover .subNav {
+  display: block;
+  opacity: 1;
 }
 
-/* line 52, ../scss/modules/_nav.scss */
+/* line 70, ../scss/modules/_nav.scss */
 .mainNav__link {
   text-align: center;
   color: #08C;
@@ -1803,65 +1823,44 @@ h5, h6 {
   font-size: 1.125em;
   font-size: 1.125rem;
   vertical-align: bottom;
-}
-
-/* line 61, ../scss/modules/_nav.scss */
-.mainNav__linkGroup:hover .mainNav__link {
-  background: #38679A;
-  color: #FAFAFA;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 /* SUBNAVIGATION */
-/* line 72, ../scss/modules/_nav.scss */
+/* line 83, ../scss/modules/_nav.scss */
 .subNav {
   position: absolute;
   opacity: 0;
   left: -0.5%;
   width: 150%;
-  -moz-transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
   z-index: 5;
   border: #38679A 5px solid;
   background: #FAFAFA;
   display: none;
+  padding: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-
-/* line 90, ../scss/modules/_nav.scss */
-.subNav .subNav__link {
-  color: #38679A;
-  display: block;
-  position: relative;
-  background: #FAFAFA;
-  list-style: none;
-  padding: .5em .5em;
-  text-align: center;
-  -moz-transition: opactiy 0.5s;
-  -webkit-transition: opactiy 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opactiy 0.5s;
-  z-index: 5;
-}
-
-/* line 105, ../scss/modules/_nav.scss */
-.subNav__link:first-child {
-  margin-top: .75em;
-}
-
-/* line 108, ../scss/modules/_nav.scss */
+/* line 96, ../scss/modules/_nav.scss */
 .subNav::before {
   position: absolute;
   width: 0;
   height: 0;
   top: 0;
-  left: 35%;
+  left: 17.5%;
   border-width: 17px;
   border-style: solid;
   border-color: #38679A transparent transparent;
@@ -1869,34 +1868,54 @@ h5, h6 {
   z-index: 10;
 }
 
-/*
-.subNav a:first-child{
-    padding-top: 1.5em;
-}
-*/
-/* line 125, ../scss/modules/_nav.scss */
-.subNav__link:hover {
-  color: #FAFAFA;
-  background: #38679A;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-/* line 135, ../scss/modules/_nav.scss */
-.mainNav__linkGroup:hover > .subNav {
+/* line 111, ../scss/modules/_nav.scss */
+.subNav__link {
   display: block;
-  opacity: 1;
+  position: relative;
+  background: #FAFAFA;
+  list-style: none;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  z-index: 5;
 }
-
-/* line 140, ../scss/modules/_nav.scss */
-.subNav a {
-  text-decoration: none;
+/* line 120, ../scss/modules/_nav.scss */
+.subNav__link:first-child {
+  margin-top: 1rem;
+}
+/* line 124, ../scss/modules/_nav.scss */
+.subNav__link:hover {
+  background-color: #38679A;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 129, ../scss/modules/_nav.scss */
+.subNav__link:hover a {
+  color: #FAFAFA;
+}
+/* line 134, ../scss/modules/_nav.scss */
+.subNav__link a {
   color: #38679A;
+  text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 142, ../scss/modules/_nav.scss */
+.subNav__link a:hover {
+  color: #FAFAFA;
 }
 
 /* line 1, ../scss/modules/_gallery.scss */

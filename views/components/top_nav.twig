@@ -5,118 +5,25 @@
     <a href="#">Contact Us</a>
   </nav>
 
-  <nav class="mainNav">
-      <div class="logo">
-          <h1>BCSB</h1>
-      </div>
-      <div class="mainNav__linkGroup">
-          <a href="" class="mainNav__link">Who We Are <i class="icon-double-angle-down"></i> </a>
-          <nav class="subNav">
-              <a href="" class="subNav__link">
-                  Contact us
-              </a>
-              <a href="" class="subNav__link">
-                  Staff Listing
-              </a>
-              <a href="" class="subNav__link">
-                  Report a Problem
-              </a>
-          </nav>
-      </div>
-      <div class="mainNav__linkGroup">
-         <a href="" class="mainNav__link">The Beamlines <i class="icon-double-angle-down"></i> </a>
-         <nav class="subNav">
-              <a href="" class="subNav__link">
-                  Ring Status
-              </a>
-              <a href="" class="subNav__link">
-                  Automounter
-              </a>
-              <a href="" class="subNav__link">
-                  Web-Ice
-              </a>
-              <a href="" class="subNav__link">
-                  5.0.1
-              </a>
-              <a href="" class="subNav__link">
-                  5.0.2
-              </a>
-              <a href="" class="subNav__link">
-                  8.2.1
-              </a>
-              <a href="" class="subNav__link">
-                  8.2.2
-              </a>
-          </nav> 
-      </div>
-      <div class="mainNav__linkGroup">
-         <a href="" class="mainNav__link">Essential Info <i class="icon-double-angle-down"></i> </a>
-         <nav class="subNav">
-              <a href="" class="subNav__link">
-                  Contact us
-              </a>
-              <a href="" class="subNav__link">
-                  Staff Listing
-              </a>
-              <a href="" class="subNav__link">
-                  Report a Problem
-              </a>
-          </nav> 
-      </div>
-      <div class="mainNav__linkGroup">
-         <a href="" class="mainNav__link">Staff Guides <i class="icon-double-angle-down"></i> </a>
-         <nav class="subNav">
-             <a href="" class="subNav__link">
-                 Beamline Blog
-             </a>
-             <a href="" class="subNav__link">
-                 Test Data
-             </a>
-             <a href="" class="subNav__link">
-                 Planned Upgrades
-             </a>
-             <a href="" class="subNav__link">
-                 Intranet
-             </a>
-             <a href="" class="subNav__link">
-                 BUDS
-             </a>
-             <a href="" class="subNav__link">
-                 On Schedule Call
-             </a>
-         </nav>
-      </div>
-      <div class="mainNav__linkGroup">
-         <a href="" class="mainNav__link">User Guides <i class="icon-double-angle-down"></i> </a>
-         <nav class="subNav">
-             <a href="" class="subNav__link">
-                 Essential Reading
-             </a>
-             <a href="" class="subNav__link">
-                 User Guides
-             </a>
-             <a href="" class="subNav__link">
-                 Weekly Schedule
-             </a>
-             <a href="" class="subNav__link">
-                 Schedule - BUDS
-             </a>
-             <a href="" class="subNav__link">
-                 Apply for Time
-             </a>
-             <a href="" class="subNav__link">
-                 Proprietary &amp; Non-Proprietary
-             </a>
-             <a href="" class="subNav__link">
-                 Collaborative Crystallography
-             </a>
-             <a href="" class="subNav__link">
-                 End of Run Form
-             </a>
-             <a href="" class="subNav__link">
-                 FAQ <i class="icon-double-angle-down"></i> 
-             </a>
-         </nav> 
-      </div>
+  <nav class="mainNavContainer">
+    <div class="logo">
+        <h1>BCSB</h1>
+    </div>
+    <ul class="mainNav">
+      {% for item in menus.primary.get_items %}
+        <li class="mainNav__linkGroup">
+          <a href="{{item.url}}" class="mainNav__link">{{item.title}} <i class="icon-double-angle-down"></i></a>
+        {% if item.get_children %}
+            <ul class="subNav">
+              {% for child in item.get_children %}
+                <li class="subNav__link"><a href="{{child.url}}">{{child.title}}</a></li>
+              {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </nav>
 </header>

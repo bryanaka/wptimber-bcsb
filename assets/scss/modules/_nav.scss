@@ -12,11 +12,12 @@
     text-align: right;
     padding: .5rem 1.5rem;
     border-bottom: #4376A3 5px solid;
-}
-.topNav a{
-    margin: 0 1.5em 0 0;
-    color: #FAFAFA;
-    text-decoration: none;
+
+    a{
+        margin: 0 1.5em 0 0;
+        color: #FAFAFA;
+        text-decoration: none;
+    }
 }
 
 .topNav__header {
@@ -32,22 +33,39 @@
     padding: .5em .5em .5em 0;
     padding: .5rem .5rem .5rem 0;
 }
-.mainNav, .mainContent, .gallery__tiles {
+.mainNavContainer, .mainContent, .gallery__tiles {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 1.5em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
-.moreInfo{
-    padding-left: -1.5em;
+
+.mainNav {
+    padding: 0;
 }
+
 .mainNav__linkGroup {
     display: inline-block;
-    padding: .5em;
-    padding: .5rem;
+    padding: 0.5rem;
+    margin:0;
+    margin-right: 0.5rem;
     position: relative;
+    list-style: none;
+    border-top: 3px #FAFAFA solid;
+    @include transition-property(background-color);
+    @include transition-duration(0.5s);
+
+    &:hover {
+        background-color: #38679A;
+        color: #FAFAFA;
+
+        .mainNav__link {
+            color: #FAFAFA;
+        }
+
+        .subNav {
+            display: block;
+            opacity: 1;
+        }
+    }
 }
 .mainNav__link {
     text-align: center;
@@ -56,15 +74,8 @@
     font-size: 1.125em;
     font-size: 1.125rem;
     vertical-align: bottom;
-
-}
-.mainNav__linkGroup:hover .mainNav__link{
-    background: #38679A;
-    color: #FAFAFA;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
+    @include transition-property(color);
+    @include transition-duration(0.5s);
 }
 
 /* SUBNAVIGATION */
@@ -74,72 +85,62 @@
     opacity:0;
     left: -0.5%;
     width: 150%;
-    -moz-transition: opacity 0.5s; 
-    -webkit-transition: opacity 0.5s;  
-    -ms-transition: opacity 0.5s;  
-    -o-transition: opacity 0.5s;  
-    transition: opacity 0.5s;
     z-index:5;
     border:#38679A 5px solid;
     background:#FAFAFA;
     display: none;
+    padding: 0;
+    @include transition-property(opacity);
+    @include transition-duration(0.5s);
+
+    &::before{
+        position: absolute;
+        width: 0;
+        height: 0;
+        top:0;
+        left:17.5%;
+        border-width: 17px;
+        border-style: solid;
+        border-color: #38679A transparent transparent;
+        content: " ";
+        z-index: 10;
+    }
 
 }
 
-
-.subNav .subNav__link{
-    color:#38679A;
+.subNav__link{
     display: block;
     position: relative;
     background:#FAFAFA;
     list-style:none;
-    padding:.5em .5em;
+    padding: 0.5rem 0.5rem;
     text-align:center;
-    -moz-transition: opactiy 0.5s; 
-    -webkit-transition: opactiy 0.5s;  
-    -ms-transition: opacity 0.5s;  
-    -o-transition: opacity 0.5s;  
-    transition: opactiy 0.5s;
     z-index:5;
-}
-.subNav__link:first-child {
-    margin-top: .75em;
-}
-.subNav::before{
-    position: absolute;
-    width: 0;
-    height: 0;
-    top:0;
-    left:35%;
-    border-width: 17px;
-    border-style: solid;
-    border-color: #38679A transparent transparent;
-    content: " ";
-    z-index: 10;
-} 
-/*
-.subNav a:first-child{
-    padding-top: 1.5em;
-}
-*/
-.subNav__link:hover{
-    color:#FAFAFA;
-    background:#38679A;
-    -moz-transition: all 0.5s; 
-    -webkit-transition: all 0.5s;  
-    -ms-transition: all 0.5s;  
-    -o-transition: all 0.5s;  
-    transition: all 0.5s;
-}
 
-.mainNav__linkGroup:hover > .subNav {
-    display:block;
-    opacity:1;
-}
+    &:first-child {
+        margin-top: 1rem;
+    }
+    
+    &:hover{
+        background-color: #38679A;
+        @include transition-property(background-color);
+        @include transition-duration(0.5s);
 
-.subNav a{
-    text-decoration:none;
-    color: #38679A;
-    margin:0;
-    padding:0;    
+        a {
+            color: #FAFAFA;
+        }
+    }
+
+    a {
+        color:#38679A;
+        text-decoration:none;
+        margin:0;
+        padding: 0.5rem;
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+
+        &:hover {
+            color: #FAFAFA;
+        }
+    }
 }
